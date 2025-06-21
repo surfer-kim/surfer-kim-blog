@@ -10,15 +10,11 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navigation = [
-    { name: "Blog", href: "/" },
     { name: "Project", href: "/project" },
     { name: "About", href: "/about" },
   ]
 
   const isActive = (href: string) => {
-    if (href === "/blog" && pathname === "/") {
-      return true // Treat home as blog
-    }
     return pathname.startsWith(href)
   }
 
@@ -42,7 +38,7 @@ export default function Header() {
                 <path d="M8 4L4 8V24L8 28H24L28 24V8L24 4H8Z" stroke="currentColor" strokeWidth="2" />
                 <path d="M12 12L20 20M20 12L12 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
-              <span className="ml-2 text-xl font-semibold text-gray-900">Surfer-Kim Blog</span>
+              <span className="ml-2 text-xl font-semibold text-gray-900">surfer-kim Blog</span>
             </div>
           </Link>
 
