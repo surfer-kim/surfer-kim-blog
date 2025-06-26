@@ -10,7 +10,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navigation = [
-    { name: "Project", href: "/project" },
+    { name: "Projects", href: "/projects" },
     { name: "About", href: "/about" },
   ]
 
